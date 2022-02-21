@@ -53,11 +53,11 @@ class ReCaptchaBase(widgets.Widget):
 
 
 class ReCaptchaV2Checkbox(ReCaptchaBase):
-    template_name = "captcha/widget_v2_checkbox.html"
+    template_name = "recaptcha/widget_v2_checkbox.html"
 
 
 class ReCaptchaV2Invisible(ReCaptchaBase):
-    template_name = "captcha/widget_v2_invisible.html"
+    template_name = "recaptcha/widget_v2_invisible.html"
 
     def build_attrs(self, base_attrs, extra_attrs=None):
         attrs = super().build_attrs(base_attrs, extra_attrs)
@@ -68,7 +68,7 @@ class ReCaptchaV2Invisible(ReCaptchaBase):
 
 
 class ReCaptchaV3(ReCaptchaBase):
-    template_name = "captcha/widget_v3.html"
+    template_name = "recaptcha/widget_v3.html"
 
     def __init__(self, api_params=None, *args, **kwargs):
         super().__init__(api_params=api_params, *args, **kwargs)
